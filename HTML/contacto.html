@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+	<head>
+		<title>Contacto.html</title>
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" href="../Recursos/Imagenes/cartoonMarte.webp">
+		<link rel="stylesheet" type="text/css" href="..\CSS\contacto.css">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Wallpoet&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="cabecera">
+				<a id="nombreEmpresa" href="Inicio.html"><h1>ConquerMars</h1></a>
+			</div>
+			<div id="secciones">
+				<a href="Inicio.html"> Inicio </a>
+				<a href="Instalaciones.html"> Instalaciones </a>
+				<a href="Servicios.html"> Servicios </a>
+				<div class="desplegable">
+				  <a href="#"> Trabajos </a>
+				  <div class="desplegable-content">
+				  <a href="trabajos.html"> Trabajos </a>
+				  <a href="proyectos.html"> Proyectos </a>
+				  <a href="productos.html"> Productos </a>
+				  </div>
+				</div>
+				<a href="Contacto.html"> Contacto </a>
+				<a href="Enlaces.html"> Enlaces </a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div id="gridContenido">
+				<div class="maps">
+					<h2>UBICACIÓN EN LA TIERRA</h2>
+					<iframe src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=43.3615865,-8.4383768&q=Lugar%20de%20Penamoa+(ConquerMars)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="1" scrolling="no"></iframe>
+					<p> &nbsp Parque Tecnologico de Penamoa. Avenida del &nbsp &nbsp Cigala 57, Torre E Edificio 44 15010 A Coruña &nbsp &nbsp A Coruña</p>
+				</div>
+				<div class="contenedorAnimacion">
+					<div class="animacion">
+						<img src="../Recursos/Imagenes/vistaLejanaMarte.png" alt="Vision clobal de Marte">
+					</div>
+				</div>
+				<div class="maps">
+				
+					<h2>UBICACIÓN EN MARTE</h2>
+					<iframe src="https://www.google.com/mars/#lat=48.854525&q=vastitas" frameborder="1" scrolling="no"></iframe>
+					<p>Vastitas Borealis, Terminus Magrathea
+					Nos Astra, 123
+					 12A <span class="barras">2685A459d--763 TRANTOR</span></p>
+				</div>
+				<div class="formularios">
+					<form action="procesarDatos.php" method="post">
+						<fieldset class="borde">
+							<legend>Formulario</legend>
+							<div class="dentroDelBorde">
+								<label for="motivoConsulta">Motivo de su consula (requerido)</label>
+								<br>	
+								<input list="motivoConsulta" name="motivo" size="35">
+								<datalist id="motivoConsulta" required>
+									<option value="Informacion sobre servicios disponibles">
+									<option value="Soporte sobre producto / cliente (clientes actuales de ConquerMars)">
+									<option value="Contabilidad, facturación o pagos">
+									<option value="Ofertas de empleo">
+									<option value="Consulta de prensa">
+									<option value="Otros">			
+								</datalist>
+								<br><br>
+								<label for="nombre_usuario">Nombre (requerido)</label>
+								<br>
+								<input type="text" name="usuario" id="nombre_usuario" size="35" required autofocus placeholder="Nombre y apellidos">
+								<br><br>
+								<img class="gifMarte" src="../Recursos/Otros/MarteGif.gif" width="480" height="253" border="0" usemap="#map" alt="imagen en movimiento del horizonte de Marte"/>
+								<map name="map">
+									<area shape="poly" coords="71,169,401,169,393,144,370,128,347,112,332,106,300,100,275,97,250,97,226,98,205,102,176,105,151,105,132,116,107,126,83,142,77,150" href="http://www.estacionespacial.com/canaltv.php" />
+								</map>
+								<label for="telefono_usuario">Telefono (requerido)</label>
+								<br>
+								<input type="tel" name="telefono" id="telefono_usuario" size="35" required pattern="[0-9]{9}" maxlength="9" placeholder="9 digitos">
+								<br><br>
+								<label for="email_usuario">Email (requerido)</label>
+								<br>
+								<input type="email" name="email" id="email_usuario" size="35" required placeholder="buzon@dominio.es">
+								<br><br>
+								<label for="asunto_usuario">Asunto</label>
+								<br>
+								<input type="text" name="asunto" id="asunto_usuario" size="35">
+								<br><br>
+								<label for="paisConsulta">Pais</label>
+								<br>
+								<input list="paisConsulta" name="pais" size="35">
+								<datalist id="paisConsulta" required>
+									<option value="Alemania">
+									<option value="Canada">
+									<option value="China">
+									<option value="España">
+									<option value="Estados Unidos">
+									<option value="Francia">
+									<option value="Israel">
+									<option value="Italia">
+									<option value="Japon">
+									<option value="Paises Bajos">
+									<option value="Reino Unido">
+									<option value="Rusia">
+								</datalist>
+								</br></br>
+								<label for="archivoAdjunto">Adjuntar archivo</label>
+								<br>
+								<input type="file" name="archivo" id="archivoAdjunto" multiple>
+								<br><br>
+								<label for="mesaje_usuario">Mensaje</label>
+								<br>
+								<div class="tamañoArea">
+									<textarea name="areaDeTexto" name="mesaje" id="mesaje_usuario" rows="8" cols="80" placeholder="Escriba aquí su consulta"></textarea>
+								</div>
+								<br><br>
+								<input type="checkbox" name="politica" value="AceptoUsoMisDatos" checked required>Acepto el uso de mis datos personales para los
+								propósito descritos en la <a class="politica" href="avisoLegal.html">Política de Privacidad.</a>
+								<br><br><br>
+								<input type="submit" value="Enviar Datos">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="piePagina">
+				<div class="colum1">
+					<h1>QUE HACEMOS?</h1>
+					<p>Empresa líder en actividades en Marte, 
+					colonizacion del planeta rojo, adaptación de la habitalididad del entorno, 
+					excursiones y actividades recreativas, con la más avanzada ingeniería planetaria
+					y un largo etcetera de servicios prestados por ConquerMars.</p>
+					<p><b>Copyright &copy; 2020 ConquerMars Investigation.</b></p>
+					<div><b><a class="avisoLegal" href="avisoLegal.html">Política de privacidad y aviso legal.</a></b></div>
+					<br><br>
+				</div>
+				<div class="colum2">
+					<h1>SIGUENOS EN RED</h1>
+					<div><a href="https://twitter.com/tv_roscosmos" target="_blank"><img  class="iconos" src="../Recursos/Imagenes/twit.png" width=11% height=11%></a></div>
+					<div><a href="https://es-es.facebook.com/Roscosmos/" target="_blank"><img  class="iconos" src="../Recursos/Imagenes/face2.png" width=11% height=11%></a></div>
+					<div><a href="https://www.instagram.com/roscosmosofficial/?hl=es" target="_blank"><img  class="iconos" src="../Recursos/Imagenes/inst.png" width=11% height=11%></a></div>
+					<div><a href="https://www.weibo.com/277773528" target="_blank"><img  class="iconos" src="../Recursos/Imagenes/weibo8.png" width=11% height=11%></a></div>
+					<div><a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank"><img  class="iconos" src="../Recursos/Imagenes/whatss.png" width=11% height=11%></a><span id="telefono">&nbsp;&nbsp;&nbsp;&nbsp;TEL: 1.099+511 627 776</span>‬</div>
+					<br><br>
+					
+					<br>
+				</div>
+				<div class="colum3">
+					<h1>CONTACTO</h1>
+					<h3>En La Tierra</h3>
+					<P>Parque Tecnologico de Penamoa
+					Avenida del Cigala, 57
+					Torre E Edificio 44
+					15010 A Coruña - A Coruña</P>
+					<h3>En Marte</h3>
+					Vastitas Borealis, Terminus Magrathea
+					Nos Astra, 123
+					 12A <span class="barras">2685A459d--763 TRANTOR</span>
+					<br><br>
+					<div><b><a class="mail" href="mailto:ConquerMars@mars.com">ConquerMars@mars.com</a></b></div>
+					<br>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
